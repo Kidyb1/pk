@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 
-double down(int N) {
+double downd(int N) {
     double sum = 0.0;
     for (int i = 1; i <= N; ++i) {
         sum += 1.0 / i;
@@ -8,8 +8,23 @@ double down(int N) {
     return sum;
 }
 
-double up(int N) {
+double upd(int N) {
     double sum = 0.0;
+    for (int i = N; i >= 1; --i) {
+        sum += 1.0 / i;
+    }
+    return sum;
+}
+float downf(int N) {
+    float sum = 0.0;
+    for (int i = 1; i <= N; ++i) {
+        sum += 1.0 / i;
+    }
+    return sum;
+}
+
+float upf(int N) {
+    float sum = 0.0;
     for (int i = N; i >= 1; --i) {
         sum += 1.0 / i;
     }
@@ -17,8 +32,8 @@ double up(int N) {
 }
 
 void compare_sums_double(int N) {
-    double down_result = down(N);
-    double up_result = up(N);
+    double down_result = downd(N);
+    double up_result = upd(N);
     std::cout << "N = " << N << ", double:" << std::endl;
     std::cout << "down(N) = " << down_result << std::endl;
     std::cout << "up(N) = " << up_result << std::endl;
@@ -26,8 +41,8 @@ void compare_sums_double(int N) {
 }
 
 void compare_sums_float(int N) {
-    float down_result = down(N);
-    float up_result = up(N);
+    float down_result = downf(N);
+    float up_result = upf(N);
     std::cout << "N = " << N << ", float:" << std::endl;
     std::cout << "down(N) = " << down_result << std::endl;
     std::cout << "up(N) = " << up_result << std::endl;

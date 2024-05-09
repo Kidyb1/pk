@@ -1,0 +1,4 @@
+﻿  zad3.cpp
+C:\Users\piotr\OneDrive\Pulpit\c++\lista1\zad3\zad3\zad3\zad3.cpp(21,20): warning C4244: "+=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\piotr\OneDrive\Pulpit\c++\lista1\zad3\zad3\zad3\zad3.cpp(29,20): warning C4244: "+=": konwersja z "double" do "float", możliwa utrata danych
+  zad3.vcxproj -> C:\Users\piotr\OneDrive\Pulpit\c++\lista1\zad3\zad3\x64\Debug\zad3.exe
